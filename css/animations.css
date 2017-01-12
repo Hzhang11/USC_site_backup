@@ -1,0 +1,48 @@
+/* Animations*/
+
+@keyframes hanging {
+    100% {
+        transform-origin: 2px 38px;
+        transform: rotateZ(90deg);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes gear {
+    0% {
+        animation-timing-function: linear;
+    }
+    30% {
+        transform: rotateZ(75deg);
+        animation-timing-function: step-end;
+    }
+    40% {
+        transform: rotateZ(63deg);
+        animation-timing-function: step-end;
+    }
+    50% {
+        transform: rotateZ(51deg);
+        animation-timing-function: step-end;
+    }
+    60% {
+        transform: rotateZ(38deg);
+        animation-timing-function: step-end;
+    }
+    70% {
+        transform: rotateZ(25deg);
+        animation-timing-function: step-end;
+    }
+    80% {
+        transform: rotateZ(12deg);
+        animation-timing-function: step-end;
+    }
+    90% {
+        transform: rotateZ(0deg);
+        animation-timing-function: step-end;
+    }
+    100% {
+        transform: rotateZ(0deg);
+        animation-timing-function: step-end;
+    }
+    
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>iEmoji</title>
+    <meta author="han" content="lab">
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        .template {
+            cursor: pointer;
+        }
+        
+        canvas {
+            display: none;
+        }
+        
+        select {
+            margin-bottom: 5px;
+        }
+        
+        input {
+            margin: 10px;
+        }
+
+        
+        .modi_area {
+            padding: 1%;
+            margin: 5% 25%;
+            width: 50%;
+            border-color: cornflowerblue;
+            border-width: 5px;
+            border-style: outset;
+        }
+        
+        .big {
+            border: none;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 5%;
+        }
+        
+        *:disabled {
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="template_area">
+        <h2>Usage: Try to select a image template and enter whatever text you want</h2> 
+        <img class="template" src="test.png"> 
+        <img class="template" src="images.jpg">
+        <h2>Or upload your own image template: </h2>
+        <input type="file" id="imgUploader">
+        <br>
+    </div>
+    <div class="modi_area">
+        <h3>Modification Area</h3>
+        <img id="final">
+        <canvas id="myCanvas" width="300" height="300"> This text is displayed if your browser does not support HTML5 Canvas. </canvas>
+        <div>
+            <input id="myText" type="text" placeholder="Enter Your Text Here">
+            <br>
+            <label for="pos">Text Position:</label>
+            <select id="pos">
+                <option value="bot">Bottom</option>
+                <option value="top">Top</option>
+            </select>
+            <br>
+            <label for="width_slider">Image Ratio: </label>
+            <input id="width_slider" type="range" min="30" max="100" value="100" disabled>
+            <br>
+        </div>
+    </div>
+    <!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="iemoji.js"></script>
+</body>
+
+</html>

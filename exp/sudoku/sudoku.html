@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="sudoku">
+    <head>
+        <style>
+            .content_wrapper {
+                padding-top: 40px;
+            }
+            
+            .game_main {
+                float: left;
+                width: 80%;
+                text-align: center;
+            }
+            
+            .game_control {
+                float: right;
+                width: 20%;
+            }
+        
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="content_wrapper" ng-controller="sudokuController as main">
+            
+            <div class="game_main">Main part 
+                {{main.board[0][1] + main.board[0][0]}}</div>
+        
+            <div class="game_control">Game Control</div>
+        </div>
+        
+        
+        
+        
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+        </script>
+        <script src="sudoku.js"></script>
+    </body>
+
+</html>
